@@ -1,5 +1,3 @@
-console.log("test");
-
 let start = 0;
 let end = 0;
 

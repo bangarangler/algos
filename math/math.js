@@ -36,12 +36,12 @@ console.log("Math Algorithms");
 function fib(n) {
   // 1
   const numbers = [1, 1]; // 1
-  let counts = 0;
+  // let counts = 0;
   for (let i = 2; i < n + 1; i++) {
     // 1
-    numbers.push(numbers[i - 2] + numbers[i - 1]); // n
+    numbers.push(numbers[i - 2] + numbers[i - 1]); // n - 1
     //console.log("running");
-    counts++;
+    // counts++;
   }
   console.log("counts", counts);
   return numbers[n]; // 1

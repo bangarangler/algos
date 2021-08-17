@@ -5,12 +5,21 @@
 
 function fact(num) {
   if (num < 0) return;
-  let thing = 1;
-  for (let i = num; i >= 1; i--) {
-    console.log("i", i);
-    thing = thing * i;
+  let res = num;
+  for (let i = num; i > 1; i--) {
+    // console.log("i", i);
+    // console.log("i - 1", i - 1);
+    // console.log("i * (i - 1)", i * (i - 1));
+    res = res * (i - 1);
+    console.log("res", res);
   }
-  return thing;
+  return res;
+  // let thing = 1;
+  // for (let i = num; i >= 1; i--) {
+  //   console.log("i", i);
+  //   thing = thing * i;
+  // }
+  // return thing;
 }
 // O(n) Linear
 
